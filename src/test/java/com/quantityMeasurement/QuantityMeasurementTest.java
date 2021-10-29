@@ -171,4 +171,12 @@ public class QuantityMeasurementTest {
         double actual = quantityMeasurement.inchToYardConverter(givenLengthIn_InToYd);
         Assertions.assertNotEquals(1,actual);
     }
+    /* TestCase:1.16->1 yd = 36 in*/
+    @Test
+    public void givenValueInYard_ShouldReturnInInch() {
+        int givenLengthIn_YdToIn = 1;
+        double actual = quantityMeasurement.yardToInchConverter(givenLengthIn_YdToIn);
+
+
+    }
 }
