@@ -148,6 +148,13 @@ public class QuantityMeasurementTest {
     public void givenValueInFeet_ShouldReturnInYard() {
         int givenLengthIn_FtToYd = 3;
         double actual = quantityMeasurement.feetToYardConversion(givenLengthIn_FtToYd);
-        Assertions.assertEquals(0,actual);
+        Assertions.assertNotEquals(0,actual);
+    }
+    /*TestCase:1-3ft - 1yd */
+    @Test
+    public void givenValueInFeet_ShouldReturnInYards() {
+        int givenLengthIn_FtToYd = 3;
+        double actual = quantityMeasurement.feetToYardConversion(givenLengthIn_FtToYd);
+        Assertions.assertEquals(1,actual);
     }
 }

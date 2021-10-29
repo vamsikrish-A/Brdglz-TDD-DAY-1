@@ -23,6 +23,7 @@ public class QuantityMeasurement {
     }
 
     public double feetToYardConversion(int length) {
-        return 0;
+        double conversion = length/3;
+        return conversion;
     }
 }
