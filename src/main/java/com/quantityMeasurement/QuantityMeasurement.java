@@ -9,10 +9,12 @@ public class QuantityMeasurement {
     public static void main(String[] args) {
         System.out.println("Welcome to TDD - Quantity Measurement Problem.");
     }
-
+    /*UC1-Comparing lengths 1ft = 12in.
+    * TC-1.1- given 0 Feet should return 0
+    * */
     public double feetToInchConversion(int givenLengthInFeet) {
         double conversion = givenLengthInFeet * 12;
         return conversion;
     }
-    /*UC1-Comparing lengths*/
+
 }
