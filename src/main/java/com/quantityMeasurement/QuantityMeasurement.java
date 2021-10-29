@@ -10,7 +10,9 @@ public class QuantityMeasurement {
         System.out.println("Welcome to TDD - Quantity Measurement Problem.");
     }
 
-    public void feetToInchConversion() {
+    public double feetToInchConversion(int givenLengthInFeet) {
+        double conversion = givenLengthInFeet * 12;
+        return conversion;
     }
     /*UC1-Comparing lengths*/
 }

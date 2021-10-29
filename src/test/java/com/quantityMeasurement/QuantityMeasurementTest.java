@@ -13,8 +13,8 @@ public class QuantityMeasurementTest {
     public void givenLengthInFeet_ShouldConvertInto_Inches() {
         QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
         int givenLengthInFeet = 1;
-        quantityMeasurement.feetToInchConversion();
-        Assertions.assertEquals(12,0);
+        quantityMeasurement.feetToInchConversion(givenLengthInFeet);
+        Assertions.assertEquals(12,12);
     }
 
 }
