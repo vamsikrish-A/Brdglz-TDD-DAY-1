@@ -12,7 +12,7 @@ public class QuantityMeasurement {
     /*UC1-Comparing lengths 1ft = 12in.
     * TC-1.1- given 0 Feet should return 0
     * */
-    public double feetToInchConversion(int givenLengthInFeet) {
+    public double feetToInchConversion(Integer givenLengthInFeet) {
         double conversion = givenLengthInFeet * 12;
         return conversion;
     }

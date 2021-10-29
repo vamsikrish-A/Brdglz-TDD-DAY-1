@@ -1,7 +1,6 @@
 package com.quantityMeasurement;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
 /*@purpose: TDD Quantity Measurement Problem Test Cases.
@@ -49,5 +48,20 @@ public class QuantityMeasurementTest {
         Assertions.assertNotEquals(13,actual);
 
     }
+    /*Type check*/
+    @Test
+    public void givenSameObjType_ShouldReturnEqual() {
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        int actual = (int) quantityMeasurement.feetToInchConversion(1);
+        Assertions.assertEquals(12,actual);
+    }
+    /*Type check*/
+    @Test
+    public void givenSameObjType_ShouldReturnNotEqual() {
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        double actual = quantityMeasurement.feetToInchConversion(1);
+        Assertions.assertNotEquals(12.01,actual);
+    }
+
 
 }
