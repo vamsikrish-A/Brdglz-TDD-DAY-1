@@ -92,6 +92,15 @@ public class QuantityMeasurementTest {
         int actual = quantityMeasurement.InchToFeetConversion(givenLengthIn_Inch);
         Assertions.assertEquals(0,actual);
     }
+    //*performing NUll Check test for equality.
+    // public static void assertNull(Object actual, String message)*//
+    @Test
+    public void givenValue_ShouldCheckForNull() {
+        int givenLengthIn_Inch = Integer.parseInt(String.valueOf(12));
+        int actual = quantityMeasurement.InchToFeetConversion(givenLengthIn_Inch);
+        Assertions.assertNotNull(actual);
+    }
+
 
 
 
