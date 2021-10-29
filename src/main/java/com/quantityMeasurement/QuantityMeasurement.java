@@ -17,4 +17,8 @@ public class QuantityMeasurement {
         return conversion;
     }
 
+    public int InchToFeetConversion(int length) {
+        int conversion = length/12;
+        return conversion;
+    }
 }

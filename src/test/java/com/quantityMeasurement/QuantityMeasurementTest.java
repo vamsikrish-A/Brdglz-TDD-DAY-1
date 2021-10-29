@@ -78,5 +78,21 @@ public class QuantityMeasurementTest {
         Assertions.assertEquals(24,24);
     }
 
+    /*performing Equality test for Inch method*/
+    QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+    @Test
+    public void givenLengthInInch_ConvertIntoFeet_ShouldReturnNotEquals() {
+        int givenLengthIn_Inch = 12;
+        int actual = quantityMeasurement.InchToFeetConversion(givenLengthIn_Inch);
+        Assertions.assertNotEquals(1,0);
+    }
+    @Test
+    public void givenLengthInInch_ConvertIntoFeet_ShouldReturnEquals() {
+        int givenLengthIn_Inch = 12;
+        int actual = quantityMeasurement.InchToFeetConversion(givenLengthIn_Inch);
+        Assertions.assertEquals(0,actual);
+    }
+
+
 
 }
