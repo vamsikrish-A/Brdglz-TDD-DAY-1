@@ -34,7 +34,7 @@ public class QuantityMeasurementTest {
     }
     /*ref Check*/
     @Test
-    public void RefCheckForEqual_TestForEquality() {
+    public void refCheckForEqual_TestForEquality() {
         QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
         int actual = (int) quantityMeasurement.feetToInchConversion(1);
         Assertions.assertEquals(12,actual);
@@ -43,7 +43,7 @@ public class QuantityMeasurementTest {
 
     /*ref Check*/
     @Test
-    public void RefCheckforNotEqual_TestForEquality() {
+    public void refCheckForNotEqual_TestForEquality() {
         QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
         double actual = (int) quantityMeasurement.feetToInchConversion(1);
         Assertions.assertNotEquals(13,actual);
