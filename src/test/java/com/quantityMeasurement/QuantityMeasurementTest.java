@@ -116,6 +116,18 @@ public class QuantityMeasurementTest {
         Assertions.assertNotEquals(1.1,actual);
 
     }
+    /*Type check*/
+    @Test
+    public void givenSameObjTypeForInchTest_ShouldReturnEqual() {
+        int actual = (int) quantityMeasurement.InchToFeetConversion(12);
+        Assertions.assertEquals(1,actual);
+    }
+    /*Type check*/
+    @Test
+    public void givenSameObjTypeForInchTest_ShouldReturnNotEqual() {
+        double actual = quantityMeasurement.InchToFeetConversion(12);
+        Assertions.assertNotEquals(1.01,actual);
+    }
 
 
 
