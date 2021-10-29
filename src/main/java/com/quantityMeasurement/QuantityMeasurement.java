@@ -26,4 +26,11 @@ public class QuantityMeasurement {
         double conversion = length/3;
         return conversion;
     }
+/*1in = 12ft
+* 3ft = 1yrd
+* 1 yard = 36in*/
+    public double inchToYardConverter(int givenLengthIn_inToYd) {
+        double conversion = givenLengthIn_inToYd * 36;
+        return conversion;
+    }
 }
