@@ -101,6 +101,22 @@ public class QuantityMeasurementTest {
         Assertions.assertNotNull(actual);
     }
 
+    /*ref Check*/
+    @Test
+    public void refCheckForEqual_TestForIncjEquality() {
+        int actual = (int) quantityMeasurement.InchToFeetConversion(12);
+        Assertions.assertEquals(1,actual);
+
+    }
+
+    /*ref Check*/
+    @Test
+    public void refCheckForNotEqual_TestForInchEquality() {
+        double actual = (int) quantityMeasurement.InchToFeetConversion(12);
+        Assertions.assertNotEquals(1.1,actual);
+
+    }
+
 
 
 
