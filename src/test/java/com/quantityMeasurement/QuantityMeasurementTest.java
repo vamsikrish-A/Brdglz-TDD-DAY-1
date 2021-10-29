@@ -1,10 +1,20 @@
 package com.quantityMeasurement;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 /*@purpose: TDD Quantity Measurement Problem Test Cases.
  *
  * @author: Vamsi Krishna Anthati
  *
  **/
 public class QuantityMeasurementTest {
-    QuantityMeasurement Qm = new QuantityMeasurement();
+    @Test
+    public void givenLengthInFeet_ShouldConvertInto_Inches() {
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        int givenLengthInFeet = 1;
+        quantityMeasurement.feetToInchConversion();
+        Assertions.assertEquals(12,0);
+    }
 
 }
