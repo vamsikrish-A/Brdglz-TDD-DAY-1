@@ -90,7 +90,7 @@ public class QuantityMeasurementTest {
     public void givenLengthInInch_ConvertIntoFeet_ShouldReturnEquals() {
         int givenLengthIn_Inch = 12;
         int actual = quantityMeasurement.InchToFeetConversion(givenLengthIn_Inch);
-        Assertions.assertEquals(0,actual);
+        Assertions.assertEquals(1,actual);
     }
     //*performing NUll Check test for equality.
     // public static void assertNull(Object actual, String message)*//
@@ -143,6 +143,11 @@ public class QuantityMeasurementTest {
     }
 
 
-
-
+/*Uc-2 Comparing lengths 3ft = 1yd*/
+    @Test
+    public void givenValueInFeet_ShouldReturnInYard() {
+        int givenLengthIn_FtToYd = 3;
+        double actual = quantityMeasurement.feetToYardConversion(givenLengthIn_FtToYd);
+        Assertions.assertEquals(0,actual);
+    }
 }

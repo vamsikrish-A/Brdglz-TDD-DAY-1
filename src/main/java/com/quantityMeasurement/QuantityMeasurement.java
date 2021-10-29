@@ -21,4 +21,8 @@ public class QuantityMeasurement {
         int conversion = length/12;
         return conversion;
     }
+
+    public double feetToYardConversion(int length) {
+        return 0;
+    }
 }
