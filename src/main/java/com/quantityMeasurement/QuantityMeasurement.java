@@ -38,4 +38,9 @@ public class QuantityMeasurement {
         double conversion = givenLengthIn_ydToIn *36;
         return conversion;
     }
+
+    public double yardToFeetConversion(int givenLengthIn_ydToFt) {
+        double conversion = givenLengthIn_ydToFt * 3;
+        return conversion;
+    }
 }

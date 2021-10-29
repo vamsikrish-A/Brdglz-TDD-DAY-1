@@ -184,4 +184,11 @@ public class QuantityMeasurementTest {
         double actual = quantityMeasurement.inchToYardConverter(givenLengthIn_InToYd);
         Assertions.assertEquals(1,actual);
     }
+    /* TestCase:1.18 -> 1 yd = 3 ft*/
+    @Test
+    public void givenValueInYard_ShouldReturnInFeet() {
+        int givenLengthIn_YdToFt = 1;
+        double actual = quantityMeasurement.yardToFeetConversion(givenLengthIn_YdToFt);
+        Assertions.assertEquals(3,actual);
+    }
 }
