@@ -129,6 +129,19 @@ public class QuantityMeasurementTest {
         Assertions.assertNotEquals(1.01,actual);
     }
 
+    /*Value check */
+    @Test
+    public void giveValue_Should_ReturnTheEqualForInchTest (){
+        double actual = quantityMeasurement.InchToFeetConversion(24);
+        Assertions.assertEquals(2,actual);
+    }
+    /*Value check */
+    @Test
+    public void giveValue_Should_ReturnNotEqualForInchTest (){
+        int actual = quantityMeasurement.InchToFeetConversion((int) 24.4);
+        Assertions.assertEquals(2,actual);
+    }
+
 
 
 
