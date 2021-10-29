@@ -63,5 +63,20 @@ public class QuantityMeasurementTest {
         Assertions.assertNotEquals(12.01,actual);
     }
 
+    /*Value check */
+    @Test
+    public void giveValue_Should_ReturnTheEqual (){
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        double actual = quantityMeasurement.feetToInchConversion(2);
+        Assertions.assertEquals(24,24);
+    }
+    /*Value check */
+    @Test
+    public void giveValue_Should_ReturnNotEqual (){
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        int actual = (int) quantityMeasurement.feetToInchConversion(2);
+        Assertions.assertEquals(24,24);
+    }
+
 
 }
