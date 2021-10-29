@@ -24,5 +24,12 @@ public class QuantityMeasurementTest {
         quantityMeasurement.feetToInchConversion(givenLengthInFeet);
         Assertions.assertEquals(0,0);
     }
+    //*performing NUll Check test for equality.
+    // public static void assertNull(Object actual, String message)*//
+    @Test
+    public void NullCheck_TestForEquality() {
+        QuantityMeasurement quantityMeasurement = new QuantityMeasurement();
+        Assertions.assertNotNull(quantityMeasurement.feetToInchConversion(1));
+    }
 
 }
