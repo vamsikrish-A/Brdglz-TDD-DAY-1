@@ -157,4 +157,11 @@ public class QuantityMeasurementTest {
         double actual = quantityMeasurement.feetToYardConversion(givenLengthIn_FtToYd);
         Assertions.assertEquals(1,actual);
     }
+    /* TestCase:1.14-> 1 ft != 1 yd*/
+    @Test
+    public void givenValueInFeet_ShouldNotReturn_EqualYards() {
+        int givenLengthIn_FtToYd = 1;
+        double actual = quantityMeasurement.feetToYardConversion(givenLengthIn_FtToYd);
+        Assertions.assertNotEquals(1,actual);
+    }
 }
